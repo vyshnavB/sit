@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+    {% load static %}
+<!-- Mirrored from aonetheme.com/sf-html-demo/categories-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:26:34 GMT -->
+<head>
+
+	<!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="robots" content="" />    
+    <meta name="description" content="" />
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    
+    <!-- PAGE TITLE HERE -->
+    <title>Service Finder Template | Categories Detail</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Bootstrap toggle -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap4-toggle.min.css' %}">
+    <!-- Bootstrap select -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-select.min.css' %}">
+    <!-- Price Range Slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-slider.min.css' %}">
+    <!-- Bootstrap data table -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dataTables.bootstrap4.min.css' %}">
+    <!-- Dropzone -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dropzone.css' %}">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font.css' %}">
+    <!-- Feather icon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/feather.css' %}">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <!-- Lc light box popup -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lc_lightbox.css' %}">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.min.css' %}">
+    <!-- Custom Scrollbar -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/m-custom-scrollbar.min.css' %}">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick.min.css' %}">
+    <!-- Slick Theme -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+
+</head>
+
+<body>
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="windows8">
+                <div class="wBall" id="wBall_1">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_2">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_3">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_4">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_5">
+                    <div class="wInnerBall"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+	<div class="page-wraper">       <!-- HEADER START -->
+
+        <!-- HEADER START -->
+        <header class="site-header header-style-2 mobile-sider-drawer-menu header-full-width">
+            <div class="sticky-header main-bar-wraper  navbar-expand-lg">
+              <div class="main-bar">  
+  
+              <div class="container clearfix"> 
+                  <!--Logo section start-->
+                  <div class="logo-header">
+                      <div class="logo-header-inner logo-header-one">
+                          <a href="{% url 'index' %}">
+                              <img src="{% static 'images/logo/lb.png' %}" alt="" class="site-logo-has">
+                              <img src="{% static 'images/logo/lb.png' %}" alt="" class="site-logo-sticky">
+  
+                          </a>
+                      </div>
+                  </div>  
+                  <!--Logo section End-->
+  
+                  <!-- NAV Toggle Button -->
+                  <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar icon-bar-first"></span>
+                      <span class="icon-bar icon-bar-two"></span>
+                      <span class="icon-bar icon-bar-three"></span>
+                  </button> 
+  
+                  <!-- MAIN Vav -->
+                  <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-center">
+                              
+                      <ul class=" nav navbar-nav">
+                          <li class="has-child current-menu-item"><a href="{% url 'index' %}">Home</a>
+                              
+                          </li>
+  
+                          <li class="has-child">
+                              <a href="{% url 'all_categories' %}">Categories</a>
+                                                           
+                          </li>
+  
+                          <li class="has-child"><a href="javascript:;">About us</a>
+                                                                                              
+                          </li>
+                  
+                          
+                  
+                          
+                          <li><a href="#">Contact</a></li>  
+                  
+                      </ul>
+  
+                  </div>
+                  <div class="extra-nav header-2-nav">
+                      <div class="extra-cell">
+                         
+                          <!--Sign up-->
+                          <a href="#" class="site-button aon-btn-signup m-l20">
+                              <i class="fa fa-plus"></i> Register here
+                          </a>
+                      </div>
+                          
+                      </div> 
+                      
+                                         
+              </div>    
+  
+              </div>
+            </div>
+          </header>
+        
+    
+        <!-- Content -->
+        <div class="page-content">
+            
+            <div class="section-content sf-allCaty-info-wrap">
+                <div class="container">
+                    <!--Category Detail Section Start-->
+                    <div class="row">
+                        <!--Category Detail Left-->
+                        <div class="col-md-6"  >
+                            <div class="sf-caty-pic" >
+                                <div  class="sf-caty-btn">View Providers</div>
+                                <div class="sf-caty-cirle"><i class="fa fa-arrow-circle-down"></i></div>
+                            </div>
+                        </div>
+                        <!--Category Detail Right-->
+                        <div class="col-md-6">
+                            <div class="sf-caty-info">
+                                
+                                <h3><span class="aon-sub-title" style="margin-bottom: -10px;" >Unlocking Excellence:</span> <br>
+                                     Your Ultimate Service Listing Partner</h3>
+                                <div class="sf-caty-text">
+                                    <p>Welcome to Listingg, where we redefine convenience and efficiency 
+                                        in service discovery! We take immense pride in being your trusted partner on the journey
+                                         to connect people with the services they need. Our platform is designed to simplify 
+                                        and elevate the way you find and showcase services, making life easier for both service providers and seekers.</p>
+                                        <div class="aon-pro-check" ><span><i style="color: green;" class="fa fa-check"></i> &nbsp; Diverse and Comprehensive Listings</span></div>
+                                        <div class="aon-pro-check" ><span><i style="color: green;" class="fa fa-check"></i> &nbsp; Empowering Service Providers</span></div>
+                                        <div class="aon-pro-check" ><span><i style="color: green;" class="fa fa-check"></i> &nbsp; Verified and Trusted Professionals</span></div>
+                                        <div class="aon-pro-check" ><span><i style="color: green;" class="fa fa-check"></i> &nbsp; Community and Support</span></div>
+                                        
+
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <!--Category Detail Section End-->
+                </div>
+            </div>
+            
+            <div class="section-content sf-allCaty-grid-wrap sf-owl-arrow">
+                <div class="container">
+                    <!--Title Section Start-->
+                    <div class="section-head">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="sf-title text-white">All Categories</h2>
+                            </div>
+                            <div class="col-md-6">
+                            </div>
+                        </div>
+                    </div>
+                    <!--Title Section End-->
+
+                    <div class="section-content">
+                        <div class="owl-carousel owl-caty-carousel sf-owl-arrow">
+
+                            {% for category in cat %}
+                            <!-- COLUMNS 1 -->
+                            <div class="item sf-caty-item-col">
+
+                                <div class="sf-catyitem-box">
+                                    <div class="sf-catyitem-pic" style="background-image: url({{ category.image.url }})" >
+                                        <span class="sf-caty-num"></span>
+                                        <a href="#" class="sf-caty-link"></a>
+                                    </div>
+                                    <h5 class="sf-catyitem-title"><a href="{% url 'category' category.id %}">{{ category.category_name }}</a></h5>
+                                </div>
+
+                                <div class="sf-catyitem-box">
+                                    <div class="sf-catyitem-pic" style="background-image: url({{ category.image.url }})">
+                                        <span class="sf-caty-num"></span>
+                                        <a href="#" class="sf-caty-link"></a>
+                                    </div>
+                                    <h5 class="sf-catyitem-title"><a href="{% url 'category' category.id %}">{{ category.category_name }}</a></h5>
+                                </div>
+
+
+                            </div>
+                            {% endfor %}
+                           
+
+
+
+                        </div>
+                    </div>                       
+                    
+                </div>
+            </div>
+            
+            
+            
+            
+                
+        </div>
+        <!-- Content END-->
+
+     <!-- FOOTER START -->
+     <footer class="site-footer footer-light" >
+            
+        <!-- FOOTER NEWSLETTER START -->
+        <div class="footer-top-newsletter">
+            <div class="container">
+                <div class="sf-news-letter">
+                    <span>Subscribe Our Newsletter</span>
+                    <form>
+                        <div class="form-group sf-news-l-form">
+                            <input type="text" class="form-control" placeholder="Enter Your Email">
+                            <button type="submit" class="sf-sb-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER BLOCKES START -->  
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer col 1--> 
+                    <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                        <div class="sf-site-link sf-widget-link">
+                            <h4 class="sf-f-title">Site Links</h4>
+                            <ul>
+                                <li><a href="blog-grid.html">Blog</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="job-grid.html">Companies</a></li>
+                                <li><a href="all-categories.html">Categories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer col 2-->
+                    <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                        <div class="sf-site-link sf-widget-cities">
+                            <h4 class="sf-f-title">Popular Cities</h4>
+                            <ul>
+                                <li><a href="all-categories.html">Kochi</a></li>
+                                <li><a href="all-categories.html">Tvm</a></li>
+                                <li><a href="all-categories.html">Calicut</a></li>
+                                <li><a href="all-categories.html">Trissur</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer col 1-->
+                    <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                        <div class="sf-site-link sf-widget-categories">
+                            <h4 class="sf-f-title">Address</h4>
+                            <ul>
+                                <li><a href="categories-detail.html">West Fort, Asvary Nagar</a></li>
+                                <li><a href="categories-detail.html">Ayyanthole, Thrissur</a></li>
+                                <li><a href="categories-detail.html">Kerala</a></li>
+                                <li><a href="categories-detail.html">680011</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Footer col 1-->
+                    <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                        <div class="sf-site-link sf-widget-contact">
+                            <h4 class="sf-f-title">Contact Info</h4>
+                            <ul>
+                                <li>India</li>
+                                <li>+91 9745044470</li>
+                                
+                                <li>info@listingg.in</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER COPYRIGHT -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="sf-footer-bottom-section">
+                    <div class="sf-f-logo"><a href="javascript:void(0);"><img src="../static/images/logo-dark.png" alt=""></a></div>
+                    <div class="sf-f-copyright">
+                        <span>Copyright 2023 | listingg. All Rights Reserved</span>
+                    </div>
+                   
+                    <div class="sf-f-social">
+                        <ul class="socila-box">
+                            <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>   
+        </div>   
+
+    </footer>
+    <!-- FOOTER END -->
+
+        <!-- BUTTON TOP START -->
+		<button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+ 	</div>
+
+    
+  
+    
+    
+    
+    
+<!-- JAVASCRIPT FILES ========================================= --> 
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script><!-- BOOTSTRAP SELECT -->    
+<script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script><!-- FORM JS -->
+<script src="{% static 'js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="{% static 'js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'js/waypoints-sticky.min.js' %}"></script><!-- STICKY HEADER -->
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+
+<script src="{% static 'js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+<script src="{% static 'js/slick.min.js' %}"></script><!-- OWL  SLIDER  -->
+
+<script src="{% static 'js/theia-sticky-sidebar.js' %}"></script><!-- STICKY SIDEBAR  -->
+<script src="{% static 'js/m-custom-scrollbar.min.js' %}"></script><!-- my account left panel scroller -->
+<script src="{% static 'js/dropzone.js' %}"></script><!-- Images upload -->
+
+<script src="{% static 'js/bootstrap4-toggle.min.js' %}"></script>
+<script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'js/dataTables.bootstrap4.min.js' %}"></script>
+
+<script src="{% static 'js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+<script src="{% static 'js/lc_lightbox.lite.js' %}"></script><!-- IMAGE POPUP -->
+<script src="{% static 'js/bootstrap-slider.min.js' %}"></script><!-- Form js -->
+
+</body>
+
+
+<!-- Mirrored from aonetheme.com/sf-html-demo/categories-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:26:37 GMT -->
+</html>

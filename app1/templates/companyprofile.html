@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from aonetheme.com/sf-html-demo/job-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:26:49 GMT -->
+<head>
+    {% load static %}
+
+
+    
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    
+    <!-- PAGE TITLE HERE -->
+    <title> Listingg.IN</title>
+    
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<!-- BOOTSTRAP STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<!-- Bootstrap toggle -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap4-toggle.min.css' %}">
+<!-- Bootstrap select -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-select.min.css' %}">
+<!-- Price Range Slider -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-slider.min.css' %}">
+<!-- Bootstrap data table -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/dataTables.bootstrap4.min.css' %}">
+<!-- Dropzone -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/dropzone.css' %}">
+<!-- Fonts -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/font.css' %}">
+<!-- Feather icon -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/feather.css' %}">
+<!-- Fontawesome -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+<!-- Lc light box popup -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/lc_lightbox.css' %}">
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.min.css' %}">
+<!-- Custom Scrollbar -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/m-custom-scrollbar.min.css' %}">
+<!-- Owl Carousel -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.min.css' %}">
+<!-- Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/slick.min.css' %}">
+<!-- Slick Theme -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/slick-theme.css' %}">
+<!-- Main Style Sheet -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- LOADING AREA START ===== -->
+    <div class="loading-area">
+        <div class="loading-box"></div>
+        <div class="loading-pic">
+            <div class="windows8">
+                <div class="wBall" id="wBall_1">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_2">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_3">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_4">
+                    <div class="wInnerBall"></div>
+                </div>
+                <div class="wBall" id="wBall_5">
+                    <div class="wInnerBall"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOADING AREA  END ====== -->
+	<div class="page-wraper">        <!-- HEADER START -->
+        <!-- HEADER START -->
+        <header class="site-header header-style-1 mobile-sider-drawer-menu header-full-width">
+            <div class="sticky-header main-bar-wraper  navbar-expand-lg">
+                <div class="main-bar">  
+                                    
+                    <div class="container clearfix"> 
+                        <!--Logo section start-->
+                        <div class="logo-header">
+                            <div class="logo-header-inner logo-header-one">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/logo/lb.png' %}" alt="" class="site-logo-has">
+                                    <img src="{% static 'images/logo/lb.png' %}" alt="" class="site-logo-sticky">
+
+                                </a>
+                            </div>
+                        </div>  
+                        <!--Logo section End-->
+
+                        <!-- NAV Toggle Button -->
+                        <button id="mobile-side-drawer" data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggler collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar icon-bar-first"></span>
+                            <span class="icon-bar icon-bar-two"></span>
+                            <span class="icon-bar icon-bar-three"></span>
+                        </button> 
+
+                        <!-- MAIN Vav -->
+                        <div class="nav-animation header-nav navbar-collapse collapse d-flex justify-content-end">
+                            
+                            <ul class=" nav navbar-nav">
+                                <li class="has-child current-menu-item"><a href="{% url 'index' %}">Home</a>
+                                    
+                                </li>
+
+                                <li class="has-child">
+                                    <a href="{% url 'all_categories' %}" style="color: black;">Categories</a>
+                                                                 
+                                </li>
+
+                                <li class="has-child"><a href="javascript:;" style="color: black;">About us</a>
+                                                                                                    
+                                </li>
+                        
+                                
+                        
+                                
+                                <li><a href="contact-us.html" style="color: black;">Contact</a></li>  
+                        
+                            </ul>
+
+                        </div>
+
+                        <div class="extra-nav header-2-nav">
+                            <div class="extra-cell">
+                               
+                                <!--Sign up-->
+                                <a href="#" class="site-button aon-btn-signup m-l20">
+                                    <i class="fa fa-plus"></i> Register here
+                                </a>
+                            </div>
+                                
+                            </div> 
+                        
+                                          
+                    
+                    </div>    
+                
+                </div>
+            </div>
+        </header>
+        <!-- HEADER END -->
+        {% for comp in comp %}
+        <!-- Content -->
+        <div class="page-content bg-white">
+          
+            <div class="sf-job-benner sf-overlay-wrapper">
+              <div class="banner-job-row">
+                <div class="sf-overlay-main" style="opacity:0;"></div>
+                <div class="sf-banner-job-heading-wrap">
+                  <div class="sf-banner-job-heading-area">
+                    {% if comp.company_image  %}
+                    <div class="sf-banner-job-logo-pic"><img src="{{ comp.company_image.url }}" alt=""></div>
+                    {% else %}
+                    <div class="sf-banner-job-logo-pic"><img src="/images/about-pic.jpg" alt=""></div>
+                    {% endif %}
+                    
+                    <div class="sf-banner-job-heading-large">{{ comp.company_n }}</div>
+                   
+                    <ul class="sf-banner-job-dutation">
+                       
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>            
+           
+            <div class="section-content ">
+            <!-- Left & right section start -->
+            <div class="container">
+                    <!--Job Information Start-->
+                    <div class="sf-job-details-fileds sf-job-details-fileds-two">
+                      <ul class="job-listing-meta meta">
+                        <li class="location">
+                            <span class="job-meta-icon"><img src="{% static 'images/job-cin/location.png' %}" alt=""></span>
+                            <div class="sf-job-meta-info">
+                                <h5 class="job-meta-title ">Location:</h5>
+                                <span class="job-meta-text "><a class="google_map_link text-orange" href="http://maps.google.com/" target="_blank">{{comp.address}} <br></a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="job-meta-icon"><img src="{% static 'images/job-cin/tag.png' %}" alt=""></span>
+                            <div class="sf-job-meta-info">
+                            <h5 class="job-meta-title">Contact:</h5>
+                            <span class="job-meta-text text-green">{{ comp.mobile }}<br>{{ comp.alt_mobile }}</span>
+                            </div>
+                        </li>
+                        <li class="job-type hourly">
+                            <span class="job-meta-icon"><img src="{% static 'images/job-cin/brifcase.png' %}" alt=""></span>
+                            <div class="sf-job-meta-info">
+                            <h5 class="job-meta-title">Category:</h5>
+                            <span class="job-meta-text text-blue">{{ comp.category_name.category_name }}</span>
+                            </div>
+                        </li>
+                      
+                        <!-- <li>
+                            <span class="job-meta-icon"><img src="/app1/static/images/job-cin/clock.png" alt=""></span>
+                            <div class="sf-job-meta-info">
+                                <h5 class="job-meta-title">Hours:</h5>
+                                <span class="job-meta-text">50</span>
+                            </div>
+                        </li> -->
+                        <!-- <li class="date-posted">
+                            <span class="job-meta-icon"><img src="/app1/static/images/job-cin/user.png" alt=""></span>
+                            <div class="sf-job-meta-info">
+                                <h5 class="job-meta-title">Posted On:</h5>
+                                <span class="job-meta-text">3 years ago</span>
+                            </div>
+                        </li> -->
+                      </ul>
+                    </div>
+                    <!--Job Information End-->
+            
+                    <div class="row">
+                        
+                         <!-- Left part start -->
+                        <div class="col-lg-8 col-md-12">
+                           
+
+                            
+                            <h3>About Us</h3>
+                            
+                            <p>{{ comp.description }}</p><br>
+                            
+                            <h3>Our service </h3>
+                            
+                            <ul class="square-list-style">
+                                <li>{{ comp.service_1 }}</li>
+                                
+                                <li>{{ comp.service_2 }}</li>
+
+
+                                {% if comp.service_3 %}
+                                <li>{{ comp.service_3 }}</li>
+                                 {% endif %} 
+
+
+                                {% if comp.service_4 %}
+                                <li>{{ comp.service_4 }}</li>
+                                {% endif %}
+
+                                {% if comp.service_5 %}
+                                    <li>{{ comp.service_5 }}</li>
+                                {% endif %}
+
+                                {% if comp.service_6 %}
+                                    <li>{{ comp.service_6 }}</li>
+                                {% endif %}
+
+                                {% if comp.service_7 %}
+                                    <li>{{ comp.service_7 }}</li>
+                                {% endif %}
+
+                                {% if comp.service_8 %}
+                                    <li>{{ comp.service_8 }}</li>
+                                {% endif %}
+                                
+                            </ul><br>
+                            
+                            <!-- <h3>Skill &amp; Experience</h3>
+                            
+                            <ul class="square-list-style">
+                                <li>You have at least 3 years� experience working as a Product Designer.</li>
+                                <li>You have experience using Sketch and InVision or Framer X</li>
+                                <li>You have some previous experience working in an agile environment � Think two-week sprints.</li>
+                                <li>You are familiar using Jira and Confluence in your workflow</li>
+                            </ul><br> -->
+                            
+                            
+                            
+                            <div class="aon-job-gallery">
+                                <h3 class="m-b30">Photos</h3>
+                                <ul class="job-gallery clearfix mfp-gallery">
+                                    {% if comp.image %}
+                                    <li>
+                                        <div class="job-gallery-pic" style="background-image:url('{{ comp.image.url }}'); background-size: cover;">
+                                            <a href="{{ comp.image.url }}" class="mfp-link job-gallery-link"></a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                
+                                    {% if comp.image_2 %}
+                                    <li>
+                                        <div class="job-gallery-pic" style="background-image:url('{{ comp.image_2.url }}'); background-size: cover; margin-left: 10px;">
+                                            <a href="{{ comp.image_2.url }}" class="mfp-link job-gallery-link"></a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                
+                                    {% if comp.image_3 %}
+                                    <li>
+                                        <div class="job-gallery-pic" style="background-image:url('{{ comp.image_3.url }}'); background-size: cover; margin-left: 10px;">
+                                            <a href="{{ comp.image_3.url }}" class="mfp-link job-gallery-link" style="margin-left: 10px;"></a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                
+                                <ul class="job-gallery clearfix mfp-gallery" style="margin-top: 10px;">
+                                    {% if comp.image_4 %}
+                                    <li>
+                                        <div class="job-gallery-pic" style="background-image:url('{{ comp.image_4.url }}'); background-size: cover;">
+                                            <a href="{{ comp.image_4.url }}" class="mfp-link job-gallery-link"></a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                
+                                    {% if comp.image_5 %}
+                                    <li>
+                                        <div class="job-gallery-pic" style="background-image:url('{{ comp.image_5.url }}'); background-size: cover; margin-left: 10px;">
+                                            <a href="{{ comp.image_5.url }}" class="mfp-link job-gallery-link"></a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                
+                                    {% if comp.image_6 %}
+                                    <li>
+                                        <div class="job-gallery-pic" style="background-image:url('{{ comp.image_6.url }}'); background-size: cover; margin-left: 10px;">
+                                            <a href="{{ comp.image_6.url }}" class="mfp-link job-gallery-link" style="margin-left: 10px;"></a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                
+                            </div>
+                            
+                  <!-- <div class="aon-job-video">
+                                <h3 class="m-b30">Video</h3>
+                                <div class="sf-pres-video">
+                                    <div class="sf-pres-video-pic">
+                                        <img src="../static/images/vid-img.jpg" alt="">
+                                        <div class="overlay-vid"></div>
+                                         <a href="https://www.youtube.com/watch?v=c1XNqw2gSbU" class="mfp-video sf-pres-video-icon active">
+                                            <i class="feather-play-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>  -->
+                            <!--Job Description End-->                           
+                        </div>
+                        <!-- Left part END -->  
+                        
+                        <!-- Side bar start -->
+                        <div class="col-lg-4 col-md-12">
+
+                            <aside class="sf-jobdetail-sidebar">
+
+                               
+                                <!--Share this post-->
+                                <div class="sf-jobdetail-blocks">
+                                    <h4 class="sf-title">Follow Us</h4>
+                                    <ul class="sf-con-social">
+
+
+                                        {% if comp.whatsapp_link %}
+                                        <li><a href="{{ comp.whatsapp_link }}" class="sf-fb" style="background-image: linear-gradient(rgb(24, 102, 13), rgb(25, 119, 2));">
+                                            <img style="width: 35px; height: 30px;" src="{% static 'images/contact-us/wha.png' %}" alt="">Whatsapp</a></li>
+
+                                        {% else %}
+                                        <li><a href="#" class="sf-fb" style="background-image: linear-gradient(rgb(24, 102, 13), rgb(25, 119, 2));">
+                                            <img style="width: 35px; height: 30px;" src="{% static 'images/contact-us/wha.png' %}" alt="">Whatsapp</a></li>
+                                        {% endif %}
+
+                                        {% if comp.fb_link %}
+                                        <li><a href="{{ comp.fb_link }}" class="sf-fb"><img src="{% static 'images/contact-us/facebook.png' %}" alt="">Facebook</a></li>
+                                        {% else %}
+                                        <li><a href="#" class="sf-fb"><img src="{% static 'images/contact-us/facebook.png' %}" alt="">Facebook</a></li>
+                                        {% endif %}
+
+                                        {% if comp.insta_link %}
+                                        <li><a href="{{ comp.insta_link }}" class="sf-instagram" style="background-image: linear-gradient(rgb(243, 143, 12), rgb(130, 43, 170));"><img style="width: 35px; height: 30px;" src="{% static 'images/contact-us/ins.png' %}" alt="">Instagram</a></li>
+                                        {% else %}
+                                        <li><a href="#" class="sf-instagram" style="background-image: linear-gradient(rgb(243, 143, 12), rgb(130, 43, 170));"><img style="width: 35px; height: 30px;" src="{% static 'images/contact-us/ins.png' %}" alt="">Instagram</a></li>
+                                        {% endif %}
+
+
+                                        {% if comp.twit_link %}
+                                        <li><a href="{{ comp.twit_link }}"  class="sf-twitter">
+                                            <img style="width: 35px; height: 30px;" src="{% static 'images/contact-us/twitter.png' %}" alt="">Twitter</a></li>
+                                            {% else %}
+                                            <li><a href="#"  class="sf-twitter">
+                                                <img style="width: 35px; height: 30px;" src="{% static 'images/contact-us/twitter.png' %}" alt="">Twitter</a></li>
+
+                                        {% endif %}
+
+                                        
+
+                                        
+                                    </ul>
+                                </div>
+                                <!--Job Post-->
+                                <div class="sf-jobdetail-blocks">
+                                    <div class="sf-related-jobs">
+                                        <div class="sf-related-job-pic">
+                                            <img src="{{ comp.company_image.url }}" alt="">
+                                        </div>
+                                        <div class="sf-related-job-location">
+                                            <i class="feather-map-pin"></i>{{comp.address}} 
+                                        </div>
+                                        <div class="sf-related-job-name">
+                                            {{ comp.company_n }}  <span class="feather-check"></span>
+                                        </div>
+                                        <div class="sf-related-job-rating">
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star "></span>
+                                            <span class="sf-rating-lable"> 5 Ratings </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Location-->
+                                <div class="sf-jobdetail-blocks">
+                                    <h4 class="sf-title">Location</h4>
+                                    {% if comp.location_link %}
+                                    <a class="sf-btn-large2" href="{{ comp.location_link }}">Get Direction <i class="feather-map-pin"></i></a>
+                                    {% else %}
+                                    <a class="sf-btn-large2" href="#">Get Direction <i class="feather-map-pin"></i></a>
+                                    {% endif %}
+                                </div>
+
+
+
+                                <!--Related Jobs-->
+                                <div class="sf-jobdetail-blocks">
+                                    <h4 class="sf-title">Related companies</h4>
+                                    <div class="owl-carousel sf-jobrelated-carousel aon-jobrelated-carousel aon-owl-arrow">
+                            
+                                
+                                        <div class="item">
+                                            <div class="sf-jobs-section">
+                                                <div class="sf-jobs-head">
+                                                    <a href="javascript:void(0);" class="sf-jobs-media"><img src="../static/images/jobs/1.jpg" alt=""></a>
+                                                    <span class="sf-jobs-position">Freelance</span>
+                                                </div>
+                                                <div class="sf-jobs-info">
+                                                    <div class="sf-job-company">Blue Hills Pvt.LTD</div>
+                                                    <h4 class="sf-title"><a href="javascript:void(0);">Woodlondon</a></h4>
+                                                    <p>Lorem ipsum dolor sit amet, sectetur adipiscing elit, sed do eiusmod temp incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p> 
+                                                </div>
+                                                <div class="sf-jobs-footer">
+                                                    <div class="sf-job-location"><i class="fa fa-map-marker"></i>London</div>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                                </div>
+
+                            </aside>
+
+                        </div>
+                        <!-- Side bar END -->
+                                              
+                    </div>
+                </div>
+            </div>   
+                
+        </div>
+        {% endfor %}
+        <!-- Content END-->
+
+        <!-- FOOTER START -->
+        <footer class="site-footer footer-light" >
+            
+            <!-- FOOTER NEWSLETTER START -->
+            <div class="footer-top-newsletter">
+                <div class="container">
+                    <div class="sf-news-letter">
+                        <span>Subscribe Our Newsletter</span>
+                        <form>
+                            <div class="form-group sf-news-l-form">
+                                <input type="text" class="form-control" placeholder="Enter Your Email">
+                                <button type="submit" class="sf-sb-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER BLOCKES START -->  
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer col 1--> 
+                        <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                            <div class="sf-site-link sf-widget-link">
+                                <h4 class="sf-f-title">Site Links</h4>
+                                <ul>
+                                    <li><a href="blog-grid.html">Blog</a></li>
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="job-grid.html">Companies</a></li>
+                                    <li><a href="all-categories.html">Categories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer col 2-->
+                        <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                            <div class="sf-site-link sf-widget-cities">
+                                <h4 class="sf-f-title">Popular Cities</h4>
+                                <ul>
+                                    <li><a href="all-categories.html">Kochi</a></li>
+                                    <li><a href="all-categories.html">Tvm</a></li>
+                                    <li><a href="all-categories.html">Calicut</a></li>
+                                    <li><a href="all-categories.html">Trissur</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer col 1-->
+                        <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                            <div class="sf-site-link sf-widget-categories">
+                                <h4 class="sf-f-title">Address</h4>
+                                <ul>
+                                    <li><a href="categories-detail.html">West Fort, Asvary Nagar</a></li>
+                                    <li><a href="categories-detail.html">Ayyanthole, Thrissur</a></li>
+                                    <li><a href="categories-detail.html">Kerala</a></li>
+                                    <li><a href="categories-detail.html">680011</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer col 1-->
+                        <div class="col-lg-3 col-md-6 col-sm-6  m-b30">
+                            <div class="sf-site-link sf-widget-contact">
+                                <h4 class="sf-f-title">Contact Info</h4>
+                                <ul>
+                                    <li>India</li>
+                                    <li>+91 9745044470</li>
+                                    
+                                    <li>info@listingg.in</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER COPYRIGHT -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="sf-footer-bottom-section">
+                        <div class="sf-f-logo"><a href="javascript:void(0);"><img src="../static/images/logo-dark.png" alt=""></a></div>
+                    	<div class="sf-f-copyright">
+                        	<span>Copyright 2023 | listingg. All Rights Reserved</span>
+                        </div>
+                       
+                        <div class="sf-f-social">
+                            <ul class="socila-box">
+                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>   
+            </div>   
+    
+        </footer>
+        <!-- FOOTER END -->
+
+        <!-- BUTTON TOP START -->
+		<button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+
+ 	</div>
+
+        
+
+
+    
+    
+    
+    
+<!-- JAVASCRIPT FILES ========================================= --> 
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script><!-- JQUERY.MIN JS -->
+<script src="{% static 'js/popper.min.js' %}"></script><!-- POPPER.MIN JS -->
+<script src="{% static 'js/bootstrap.min.js' %}"></script><!-- BOOTSTRAP.MIN JS -->
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script><!-- BOOTSTRAP SELECT -->    
+<script src="{% static 'js/jquery.bootstrap-touchspin.js' %}"></script><!-- FORM JS -->
+<script src="{% static 'js/magnific-popup.min.js' %}"></script><!-- MAGNIFIC-POPUP JS -->
+<script src="{% static 'js/waypoints.min.js' %}"></script><!-- WAYPOINTS JS -->
+<script src="{% static 'js/counterup.min.js' %}"></script><!-- COUNTERUP JS -->
+<script src="{% static 'js/waypoints-sticky.min.js' %}"></script><!-- STICKY HEADER -->
+<script src="{% static 'js/isotope.pkgd.min.js' %}"></script><!-- MASONRY  -->
+
+<script src="{% static 'js/owl.carousel.min.js' %}"></script><!-- OWL  SLIDER  -->
+<script src="{% static 'js/slick.min.js' %}"></script><!-- OWL  SLIDER  -->
+
+<script src="{% static 'js/theia-sticky-sidebar.js' %}"></script><!-- STICKY SIDEBAR  -->
+<script src="{% static 'js/m-custom-scrollbar.min.js' %}"></script><!-- my account left panel scroller -->
+<script src="{% static 'js/dropzone.js' %}"></script><!-- Images upload -->
+
+<script src="{% static 'js/bootstrap4-toggle.min.js' %}"></script>
+<script src="{% static 'js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'js/dataTables.bootstrap4.min.js' %}"></script>
+
+<script src="{% static 'js/custom.js' %}"></script><!-- CUSTOM FUCTIONS  -->
+<script src="{% static 'js/lc_lightbox.lite.js' %}"></script><!-- IMAGE POPUP -->
+<script src="{% static 'js/bootstrap-slider.min.js' %}"></script><!-- Form js -->
+
+</body>
+
+
+<!-- Mirrored from aonetheme.com/sf-html-demo/job-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 31 Jul 2023 06:26:53 GMT -->
+</html>

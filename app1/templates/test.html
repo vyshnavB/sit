@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <title>Image Test</title>
+</head>
+<body>
+    <h1>Testing Image Display</h1>
+    {% get_media_prefix as media_prefix %}
+<img src="{{ media_prefix }}we.jpg" alt="Test Image">
+
+
+</body>
+</html>
